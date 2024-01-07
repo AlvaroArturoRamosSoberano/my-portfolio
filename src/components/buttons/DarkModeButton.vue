@@ -13,7 +13,7 @@ import { ref } from 'vue'
 
 const emit = defineEmits(['dark-mode-activated', 'light-mode-activated'])
 
-const darkMode = ref(true)
+const darkMode = ref(false)
 
 const toggleMode = () => {
     darkMode.value = !darkMode.value;
