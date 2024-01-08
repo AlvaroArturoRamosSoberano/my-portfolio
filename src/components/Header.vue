@@ -10,7 +10,7 @@
           <div
             class="avatar-bg w-36 h-36  md:w-40 md:h-40 bg-white-50 rounded-full shadow-xl shadow-white-500/50 flex justify-center items-center">
             <div class="w-32 h-32 md:w-36 md:h-36 bg-royal-200 rounded-full">
-              <img src="../assets/avatar.png" alt="avatar" />
+              <img src="../assets/icons/header/avatar.png" alt="avatar" />
             </div>
           </div>
         </section>
@@ -35,9 +35,9 @@
 </template>
 
 <script setup>
-import DarkModeButton from "./buttons/DarkModeButton.vue";
-import LookingJobButton from "./buttons/LookingJobButton.vue";
-import ResumeButton from "./buttons/ResumeButton.vue";
+import DarkModeButton from "./buttons/header/DarkModeButton.vue";
+import LookingJobButton from "./buttons/header/LookingJobButton.vue";
+import ResumeButton from "./buttons/header/ResumeButton.vue";
 const emit = defineEmits(['dark-mode-activated', 'light-mode-activated'])
 
 
