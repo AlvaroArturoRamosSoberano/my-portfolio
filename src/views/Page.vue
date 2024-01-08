@@ -1,8 +1,10 @@
 <template>
   <section :class="` h-auto w-auto ${color} `">
-    <div class="w-full p-4">
-      <Header @dark-mode-activated="enableDarkMode" @light-mode-activated="enableLightMode" />
-      <Main></Main>
+    <div class="w-auto p-4 flex justify-start md:justify-center">
+      <div class="flex flex-col">
+        <Header @dark-mode-activated="enableDarkMode" @light-mode-activated="enableLightMode" />
+        <Main></Main>
+      </div>
     </div>
   </section>
 </template>

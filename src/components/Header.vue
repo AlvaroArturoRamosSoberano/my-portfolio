@@ -4,8 +4,8 @@
   </section>
 
   <section>
-    <div class="flex flex-col justify-center items-center ">
-      <div class="w-full sm:w-auto sm:flex border-b-2 border-gray-400 py-6 ">
+    <div class="flex flex-col items-center">
+      <div class="w-full sm:w-auto sm:flex border-b-2 border-gray-400 py-6 px-6">
         <section class="avatar flex justify-center">
           <div
             class="avatar-bg w-36 h-36  md:w-40 md:h-40 bg-white-50 rounded-full shadow-xl shadow-white-500/50 flex justify-center items-center">
@@ -15,7 +15,7 @@
           </div>
         </section>
 
-        <section >
+        <section>
           <div class="flex flex-col font-poppins items-center sm:items-start gap-2 text-center py-8 sm:ps-8 ">
             <h1 class="text-2xl sm:text-4xl font-bold text-slate-600">
               Arturo Ramos
