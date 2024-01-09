@@ -27,11 +27,11 @@
 
             <footer>
                 <section>
-                    <div class="flex items-center gap-2 font-poppins text-2xl text-royal-400 font-bold py-8">
+                    <div class="flex items-center gap-2 font-poppins text-2xl text-royal-400 font-bold ">
                         <h2>Email</h2>
                         <EnvelopeIcon class="h-6 w-6"></EnvelopeIcon>
                     </div>
-                    <h1>Coming soon</h1>
+                    <FormVue></FormVue>
                 </section>
             </footer>
         </div>
@@ -39,4 +39,5 @@
 </template>
 <script setup>
 import { AtSymbolIcon, EnvelopeIcon } from '@heroicons/vue/24/outline';
+import FormVue from './buttons/footer/Form.vue';
 </script>

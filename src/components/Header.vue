@@ -4,7 +4,7 @@
   </section>
 
   <section>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center animate__fadeInUp">
       <div class="w-full sm:w-auto sm:flex border-b-2 border-gray-400 py-6 px-6">
         <section class="avatar flex justify-center">
           <div
