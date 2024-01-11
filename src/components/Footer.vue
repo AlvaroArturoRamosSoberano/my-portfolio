@@ -1,7 +1,7 @@
 <template>
-    <section class="px-2.5 flex sm:justify-start md:justify-center">
-        <div class="sm:w-auto md:w-2/3 ">
-            <header class="font-poppins font-bold text-2xl text-royal-400 py-8">
+    <section class="flex justify-start md:justify-center">
+        <div class="sm:w-auto md:w-2/3 px-3">
+            <header class="font-poppins font-bold text-2xl text-royal-400 pt-4">
                 <section>
                     <div class="flex items-center gap-2">
                         <h2>Socials</h2>
@@ -11,7 +11,7 @@
             </header>
 
             <body>
-                <section class="flex justify-center pb-2">
+                <section class="py-8 flex justify-center">
                     <div class="flex gap-2 font-poppins font-semibold">
                         <a class="flex justify-center w-36 gap-2 text-lochmara-600 border-2 p-4 rounded-xl hover:outline"
                             href="https://www.linkedin.com/in/%C3%A1lvaro-arturo-ramos-soberano/" target="_blank">
@@ -31,7 +31,9 @@
                         <h2>Email</h2>
                         <EnvelopeIcon class="h-6 w-6"></EnvelopeIcon>
                     </div>
-                    <FormVue></FormVue>
+                    <div class="flex justify-center">
+                        <FormVue></FormVue>
+                    </div>
                 </section>
             </footer>
         </div>
