@@ -1,6 +1,6 @@
 <template>
   <section class="flex justify-end">
-    <dark-mode-button @dark-mode-activated="enableDarkMode" @light-mode-activated="enableLightMode"></dark-mode-button>
+    <dark-mode-button></dark-mode-button>
   </section>
 
   <section>
@@ -38,16 +38,6 @@
 import DarkModeButton from "./buttons/header/DarkModeButton.vue";
 import LookingJobButton from "./buttons/header/LookingJobButton.vue";
 import ResumeButton from "./buttons/header/ResumeButton.vue";
-
-const emit = defineEmits(['dark-mode-activated', 'light-mode-activated'])
-
-const enableDarkMode = () => {
-  emit('dark-mode-activated');
-}
-
-const enableLightMode = () => {
-  emit('light-mode-activated');
-}
 
 </script>
 
