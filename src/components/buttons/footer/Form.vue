@@ -2,7 +2,7 @@
     <section>
         <div class="flex flex-col gap-4">
             <div class="flex justify-center items-center py-8">
-                <el-button class="animate-pulse" @click="visibleForm" type="primary" plain>{{ showForm ? 'Maybe Later' :
+                <el-button class="animate-pulse" @click="visibleForm" type="" plain>{{ showForm ? 'Maybe Later' :
                     'Send me an email!'
                 }}
                     <ChevronDoubleDownIcon v-if="!showForm" class="h-5 w-5 ms-2" />
@@ -11,7 +11,7 @@
             </div>
 
             <Transition enterActiveClass="animate__animated animate__fadeInDown">
-                <div v-if="showForm" class="flex justify-center p-4 border-2 rounded-lg">
+                <div v-if="showForm" class="flex justify-center p-4 border-2 dark:border rounded-lg">
                     <form @submit.prevent="submitForm">
                         <el-input v-model="name" placeholder="Escriba su nombre" class="font-poppins font-bold pb-4" />
                         <el-input v-model="message" :rows="2" type="textarea" placeholder="Escriba el cuerpo del mensaje"
@@ -53,7 +53,6 @@ const submitForm = async () => {
             type: 'error'
         })
     } else {
-
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
@@ -78,11 +77,13 @@ const submitForm = async () => {
             })
         }
     }
-
-
 }
 const visibleForm = () => {
     showForm.value = !showForm.value
+    if (showForm.value === false) {
+        name.value = ''
+        message.value = ''
+    }
 }
 </script>
 <style>

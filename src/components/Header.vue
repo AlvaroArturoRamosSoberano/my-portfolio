@@ -4,7 +4,7 @@
   </section>
 
   <section>
-    <div class="flex flex-col items-center animate__fadeInUp">
+    <div class="flex flex-col items-center">
       <div class="w-full sm:w-auto sm:flex border-b-2 border-gray-400 py-6 px-6">
         <section class="avatar flex justify-center">
           <div
@@ -17,10 +17,10 @@
 
         <section>
           <div class="flex flex-col font-poppins items-center sm:items-start gap-2 text-center py-8 sm:ps-8 ">
-            <h1 class="text-2xl sm:text-4xl font-bold text-slate-600">
+            <h1 class="text-2xl sm:text-4xl font-bold text-slate-600 dark:text-slate-100">
               Arturo Ramos
             </h1>
-            <p class="text-sm sm:text-lg  text-slate-700 ">
+            <p class="text-sm sm:text-lg  text-slate-700 dark:text-slate-300">
               I'm a passionate web development and design UI/UX.
             </p>
             <div class="flex">
@@ -38,8 +38,8 @@
 import DarkModeButton from "./buttons/header/DarkModeButton.vue";
 import LookingJobButton from "./buttons/header/LookingJobButton.vue";
 import ResumeButton from "./buttons/header/ResumeButton.vue";
-const emit = defineEmits(['dark-mode-activated', 'light-mode-activated'])
 
+const emit = defineEmits(['dark-mode-activated', 'light-mode-activated'])
 
 const enableDarkMode = () => {
   emit('dark-mode-activated');

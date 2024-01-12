@@ -10,20 +10,18 @@
                 </section>
             </header>
 
-            <body>
                 <section class="py-8 flex justify-center">
                     <div class="flex gap-2 font-poppins font-semibold">
-                        <a class="flex justify-center w-36 gap-2 text-lochmara-600 border-2 p-4 rounded-xl hover:outline"
+                        <a class="flex justify-center w-36 gap-2 text-lochmara-600 border-2 dark:border p-4 rounded-xl hover:outline"
                             href="https://www.linkedin.com/in/%C3%A1lvaro-arturo-ramos-soberano/" target="_blank">
                             <img src="/src/assets/icons/footer/linkedin.png" alt="linkedIn" class="h-6 w-6">LinkedIn
                         </a>
-                        <a class="flex justify-center w-36 gap-2 border-2 p-4 rounded-xl hover:outline"
+                        <a class="flex justify-center w-36 gap-2 border-2 dark:text-gray-50 dark:border p-4 rounded-xl hover:outline"
                             href="https://github.com/AlvaroArturoRamosSoberano" target="_blank">
                             <img src="/src/assets/icons/footer/github.png" alt="github" class="h-6 w-6">Github
                         </a>
                     </div>
                 </section>
-            </body>
 
             <footer>
                 <section>
