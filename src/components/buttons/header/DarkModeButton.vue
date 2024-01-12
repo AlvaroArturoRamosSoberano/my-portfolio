@@ -11,6 +11,11 @@
 import { MoonIcon, SunIcon } from '@heroicons/vue/24/solid'
 import { ref } from 'vue'
 
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+} else {
+    document.documentElement.classList.remove('dark')
+}
 const toggleDarkMode = ref(document.documentElement.className === "dark")
 
 const changeDarkMode = () => {
